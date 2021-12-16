@@ -8,8 +8,36 @@
     <title>TOP Project n°3 | Etch-a-Sketch</title>
 </head>
 <body>
-    <header></header>       
-    <main></main>
-    <footer></footer>
+    <header>
+        <h2>The Odin Project's</h2>
+        <h1>Etch-a-Sketch</h1>
+    </header>       
+    <main>
+        <div class="control-panel">
+            <h3>Control Panel</h3>
+            <div class="controls">
+                <div class="current-color-container">
+                    <span class="color-label">Current color :</span>
+                    <span class="current-color-display"></span>
+                </div>
+                <button class="eraser-button">eraser</button>
+                <button class="clear-button">Clear</button>
+                <div class="box-color-container">
+                    <label for="box-color" class="box-color">Pick a color</label>
+                    <input type="color" class="box-color-picker">
+                </div>
+                <div class="width-picker-container">
+                    <label for="grid-width" class="grid-width-display">Grid width : 10 x 10</label>
+                    <input class="grid-width-picker" name="grid-width" step="1" value="10" type="range" min="2" max="64">
+                </div>
+            </div>
+        </div>
+        <div class="grid-container">
+            
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

@@ -1,5 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+body{
+    background-color: #0F2C67;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    background-color: #F3950D;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    padding: 8px 16px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.4s;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+button:hover{
+    scale: 1.1;
+    transition: 0.4s;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+h1{
+    color: #F3950D;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+h2{
+    color: #F4E185;
+    font-size: 14px;
+}
+
+h3{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr repeat(3, auto) 1fr;
+    width: 100%;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.control-panel{
+    background-color: #CD1818;
+    padding: 20px;
+    height: 100%;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.grid-container{
+    background-color: #fff;
+    min-width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.width-picker-container, .box-color-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-color-display{
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: -6px;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.color-label, .box-color, .grid-width-display{
+    color: #fff;
+}
+
+input[type="color"]{
+    border: none;
+    width: 30px;
+    height: 30px;
 }
